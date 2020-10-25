@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{81ee7097-feae-450d-af43-516fcbc4bfdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{85f86b24-bfc7-488e-83c9-e33574edcb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\3rd party">
+      <UniqueIdentifier>{41464ea5-5d76-4088-8916-bb53f320530c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\math">
+      <UniqueIdentifier>{79198960-dc32-42ab-9a7e-399a1e7e4149}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3rd Party\stb_image.h">
+      <Filter>Headers\3rd party</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd Party\stb_write.h">
+      <Filter>Headers\3rd party</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\vec3.h">
+      <Filter>Headers\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\aabb.h">
+      <Filter>Headers\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\PMath.h">
+      <Filter>Headers\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\ray.h">
+      <Filter>Headers\math</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Hittable.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PRender-master\PRender\moving_sphere.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="BVH.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Math\vec3.cpp">
+      <Filter>Headers\math</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="moving_sphere.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
