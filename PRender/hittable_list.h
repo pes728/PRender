@@ -9,9 +9,9 @@
 #include <memory>
 #include <vector>
 
-class World : public hittable{
+class hittable_list : public hittable{
 public:
-    World(){ }
+    hittable_list(){ }
     
     void add(shared_ptr<hittable> object){
         objects.push_back(object);
@@ -23,4 +23,4 @@ public:
     std::vector<std::shared_ptr<hittable>> objects;
 };
 
-#endif /* World_h */
+#endif

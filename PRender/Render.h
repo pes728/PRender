@@ -9,7 +9,7 @@
 #define Render_h
 #include <thread>
 #include "Camera.h"
-#include "World.h"
+#include "hittable_list.h"
 #include "common.h"
 #include "Image.h"
 #include <iostream>
@@ -21,9 +21,9 @@
 
 void render(int image_width, int image_height, int samples, int max_depth, Camera c, const hittable& world, uint8_t* data);
 
-World random_scene();
+hittable_list random_scene();
 
-World one_sphere();
+hittable_list one_sphere();
 
 void render_pixel(int x, int y, int image_width, int image_height, int samples, int max_depth, Camera c, const hittable& world, uint8_t* data);
 

@@ -8,8 +8,8 @@
 #include "Render.h"
 
 
-World one_sphere(){
-    World world;
+hittable_list one_sphere(){
+    hittable_list world;
 
     auto ground_material = make_shared<lambertian>(vec3(1.0, 0.0, 0.0));
     world.add(make_shared<sphere>(vec3(0,-1000,0), 1000, ground_material));
@@ -20,8 +20,8 @@ World one_sphere(){
     return world;
 }
 
-World random_scene() {
-    World world;
+hittable_list random_scene() {
+    hittable_list world;
 
     auto ground_material = make_shared<lambertian>(vec3(0.5, 0.5, 0.5));
     world.add(make_shared<sphere>(vec3(0,-1000,0), 1000, ground_material));

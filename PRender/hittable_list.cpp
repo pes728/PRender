@@ -5,9 +5,9 @@
 //  Created by Peter Sandquist on 9/30/20.
 //
 
-#include "World.h"
+#include "hittable_list.h"
 #include <iostream>
-bool World::hit(const ray& r, double t_min, double t_max, hit_record& rec) const {
+bool hittable_list::hit(const ray& r, double t_min, double t_max, hit_record& rec) const {
     hit_record temp_rec;
     auto hit_anything = false;
     auto closest_so_far = t_max;
@@ -24,7 +24,7 @@ bool World::hit(const ray& r, double t_min, double t_max, hit_record& rec) const
     return hit_anything;
 }
 
-bool World::bounding_box(double t0, double t1, aabb& output_box) const {
+bool hittable_list::bounding_box(double t0, double t1, aabb& output_box) const {
     if (objects.empty()) return false;
 
     aabb temp_box;
@@ -36,5 +36,5 @@ bool World::bounding_box(double t0, double t1, aabb& output_box) const {
         first_box = false;
     }
 
-    return true;l
+    return true;
 }
